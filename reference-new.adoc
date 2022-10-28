@@ -1,0 +1,157 @@
+---
+sidebar: sidebar 
+permalink: reference-new.html 
+keywords: 'what"s new, new, features, release notes, enhancements' 
+summary: Cloud Volumes ONTAP 9.8 comprend un certain nombre de nouvelles fonctionnalités et améliorations. 
+---
+= Nouveautés de Cloud Volumes ONTAP 9.8
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Cloud Volumes ONTAP 9.8 comprend un certain nombre de nouvelles fonctionnalités et améliorations.
+
+D'autres fonctionnalités et améliorations sont également introduites dans les dernières versions de Cloud Manager. Voir la https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/whats-new.html["Notes de version de Cloud Manager"^] pour plus d'informations.
+
+
+
+== Les instances c4, m4 et r4 ne sont plus prises en charge (28 octobre 2022)
+
+Dans AWS, les types d'instances EC2 c4, m4 et r4 ne sont plus pris en charge par Cloud Volumes ONTAP. Si un système existant fonctionne sur un type d'instance c4, m4 ou r4, vous devez passer à un type d'instance dans la famille d'instances c5, m5 ou r5.
+
+link:https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-change-ec2-instance.html["Découvrez comment modifier le type d'instance EC2 pour Cloud Volumes ONTAP"^].
+
+Reportez-vous à la section link:https://mysupport.netapp.com/info/communications/ECMLP2880231.html["Support NetApp"^] pour en savoir plus sur la fin de disponibilité et la prise en charge de ces types d'instances.
+
+
+
+== 9.8 GA (5 janvier 2021)
+
+La version GA de Cloud Volumes ONTAP 9.8 est désormais disponible. La version GA inclut des correctifs. Cloud Manager vous invite à mettre à niveau les systèmes 9.8 RC1 et 9.7 existants vers cette version.
+
+
+
+== Modifications introduites avec Cloud Manager 3.9.2 (4 janvier 2021)
+
+La version 3.9.2 de Cloud Manager inclut plusieurs améliorations pour Cloud Volumes ONTAP, notamment la prise en charge des publications hors AWS, des disques de grande taille dans Google Cloud et bien plus encore.
+
+Accédez au https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/whats-new.html["Notes de version de Cloud Manager"^] pour plus d'informations sur la version 3.9.2.
+
+
+
+== E48s_v3 est désormais pris en charge par paires haute disponibilité (21 décembre 2020)
+
+Le type de VM E48s_v3 est désormais pris en charge par des paires HA Cloud Volumes ONTAP dans Microsoft Azure.
+
+
+
+== Instances EC2 prises en charge (11 décembre 2020)
+
+Depuis la version 9.8, les types d'instances EC2 c4, m4 et r4 ne sont pas pris en charge par les nouveaux systèmes Cloud Volumes ONTAP. La modification d'un système 9.8 existant à l'un de ces types d'instances n'est pas prise en charge non plus.
+
+Si votre système Cloud Volumes ONTAP 9.7 fonctionne sur un type d'instance c4, m4 ou r4, vous pouvez tout de même effectuer la mise à niveau vers la version 9.8.
+
+
+
+== Mise à jour 9.8 RC1 (12 novembre 2020)
+
+Comme les systèmes à un seul nœud, Cloud Manager alloue désormais un disque central aux nouveaux déploiements de 9.8 paires HA dans AWS lorsque vous utilisez un type d'instance C5, M5 ou R5. Le disque de base étend la capacité à basculer entre les types d'instances pris en charge, améliore la capacité du système à collecter des fichiers « core » lorsqu'un problème se produit, ce qui permet par la suite de prendre en charge des types d'instances plus volumineux.
+
+Le disque principal est un disque SSD polyvalent (gp2) avec 540 Gio.
+
+
+NOTE: L'ajout de ce disque principal permet de prendre en charge un seul disque de données moins sur les systèmes qui utilisent ces types d'instances. link:reference-limits-aws.html["En savoir plus sur les limites de stockage dans AWS"].
+
+
+
+== 9.8 RC1 (8 novembre 2020)
+
+Cloud Volumes ONTAP 9.8 RC1 est désormais disponible dans AWS, Azure et Google Cloud Platform. Dans Azure, la version 9.8 RC1 est disponible pour le moment uniquement pour les mises à niveau.
+
+Outre les fonctionnalités introduites avec https://library.netapp.com/ecm/ecm_download_file/ECMLP2492508["ONTAP 9.8"^], Cette version de Cloud Volumes ONTAP inclut les éléments suivants :
+
+*  pairs in Google Cloud
+*  for Azure NIC detach events and maintenance events
+*  write speed with HA pairs in AWS and Azure
+*  for up to 24 storage VMs in AWS
+*  disk for single node systems in AWS
+
+
+
+
+=== Paires haute disponibilité dans Google Cloud
+
+Les paires haute disponibilité Cloud Volumes ONTAP sont désormais disponibles dans Google Cloud.
+
+Une paire haute disponibilité garantit une fiabilité exceptionnelle et la continuité de l'activité en cas de défaillances dans votre environnement cloud. À l'instar de Cloud Volumes ONTAP dans AWS, une paire HA dans Google Cloud inclut deux nœuds Cloud Volumes ONTAP dont les données sont mises en miroir de manière synchrone entre les deux nœuds, ainsi qu'une instance médiateur qui fournit un canal de communication afin d'aider au basculement et au rétablissement du stockage.
+
+Afficher link:reference-configs-gcp.html["configurations compatibles"] et link:reference-limits-gcp.html["limites de stockage"].
+
+https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/concept-ha-google-cloud.html["En savoir plus sur les paires haute disponibilité dans Google Cloud"^].
+
+
+
+=== Correctifs pour les événements de déconnexion et de maintenance de la carte réseau Azure
+
+Cette version apporte plusieurs améliorations à la façon dont Cloud Volumes ONTAP gère les événements gel d'Azure, les événements de déconnexion d'Azure NIC et d'autres activités de maintenance Azure (par exemple, la révocation de fonctions virtuelles). Dans cette version, Cloud Volumes ONTAP est plus tolérant aux pannes et gère les événements Azure plus positivement, avec un risque réduit d'interruption de service ou de dégradation du cluster.
+
+
+
+=== Vitesse d'écriture élevée avec les paires HA dans AWS et Azure
+
+Cloud Volumes ONTAP prend désormais en charge la vitesse d'écriture élevée avec les paires HA dans AWS et Azure lorsqu'une instance ou un type de VM spécifique est utilisé. Optez pour la vitesse d'écriture élevée si vos workloads nécessitent des performances d'écriture rapides et que vous ne craignez pas de perdre des données.
+
+Avant de choisir une vitesse d'écriture, vous devez comprendre les différences entre les paramètres normaux et élevés et les risques et les recommandations lors de l'utilisation de la vitesse d'écriture élevée.
+
+https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/concept-write-speed.html["En savoir plus >>"^].
+
+
+
+=== Prise en charge de 24 machines virtuelles de stockage dans AWS
+
+Jusqu'à 24 machines virtuelles de stockage sont désormais prises en charge avec Cloud Volumes ONTAP dans AWS lorsque vous utilisez un type d'instance C5, M5 ou R5 et que vous apportez votre propre licence. Parmi ces 24 machines virtuelles de stockage, jusqu'à 12 peuvent être configurées pour la reprise après incident.
+
+La limite peut être inférieure, selon le type d'instance EC2 que vous utilisez.
+
+Une licence d'extension est requise pour chaque machine virtuelle de stockage _service_ de données supplémentaire au-delà de la première machine virtuelle de stockage fournie par défaut avec Cloud Volumes ONTAP. Contactez l'équipe en charge de votre compte pour obtenir une licence d'extension SVM.
+
+Les machines virtuelles de stockage que vous configurez pour la reprise après incident ne nécessitent pas de licence supplémentaire (elles sont gratuites), mais elles ne tiennent pas compte de la limite des machines virtuelles de stockage.
+
+link:reference-limits-aws.html["En savoir plus sur les limites des machines virtuelles de stockage"].
+
+https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-managing-svms-aws.html["Découvrez comment créer des machines virtuelles de stockage destinées à Cloud Volumes ONTAP dans AWS"^].
+
+
+
+=== Disque principal pour les systèmes à un seul nœud dans AWS
+
+Cloud Manager attribue désormais un disque central aux nouveaux déploiements de 9.8 nœuds uniques dans AWS lorsque vous utilisez un type d'instance C5, M5 ou R5. Le disque de base étend la capacité à basculer entre les types d'instances pris en charge, améliore la capacité du système à collecter des fichiers « core » lorsqu'un problème se produit, ce qui permet par la suite de prendre en charge des types d'instances plus volumineux.
+
+Le disque principal est un disque SSD polyvalent (gp2) avec 540 Gio.
+
+
+NOTE: L'ajout de ce disque « core » prend en charge un seul disque de données, les systèmes à un nœud unique qui utilisent ces types d'instances. link:reference-limits-aws.html["En savoir plus sur les limites de stockage dans AWS"].
+
+
+
+== Version requise de Cloud Manager Connector
+
+Cloud Manager Connector doit exécuter la version 3.9.0 ou ultérieure pour déployer de nouveaux systèmes Cloud Volumes ONTAP 9.8 et mettre à niveau les systèmes existants vers la version 9.8.
+
+
+
+== Notes de mise à niveau
+
+* La mise à niveau d'Cloud Volumes ONTAP doit être effectuée depuis Cloud Manager. Vous ne devez pas mettre à niveau Cloud Volumes ONTAP à l'aide de System Manager ou de l'interface de ligne de commandes. Cela peut affecter la stabilité du système.
+* Vous pouvez effectuer la mise à niveau vers Cloud Volumes ONTAP 9.8 à partir de la version 9.7. Cloud Manager vous invite à mettre à niveau vos systèmes Cloud Volumes ONTAP 9.7 existants vers la version 9.8.
++
+http://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-updating-ontap-cloud.html["Découvrez comment effectuer la mise à niveau lorsque Cloud Manager vous informe"^].
+
+* La mise à niveau d'un système à un nœud unique permet de mettre le système hors ligne pendant 25 minutes au cours desquelles les E/S sont interrompues.
+* La mise à niveau d'une paire haute disponibilité s'effectue sans interruption et les E/S sont continues. Au cours de ce processus de mise à niveau sans interruption, chaque nœud est mis à niveau en tandem afin de continuer à traiter les E/S aux clients.
+
