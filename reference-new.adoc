@@ -75,11 +75,11 @@ Cloud Volumes ONTAP 9.8 RC1 est désormais disponible dans AWS, Azure et Google 
 
 Outre les fonctionnalités introduites avec https://library.netapp.com/ecm/ecm_download_file/ECMLP2492508["ONTAP 9.8"^], Cette version de Cloud Volumes ONTAP inclut les éléments suivants :
 
-*  pairs in Google Cloud
-*  for Azure NIC detach events and maintenance events
-*  write speed with HA pairs in AWS and Azure
-*  for up to 24 storage VMs in AWS
-*  disk for single node systems in AWS
+* <<Paires haute disponibilité dans Google Cloud>>
+* <<Correctifs pour les événements de déconnexion et de maintenance de la carte réseau Azure>>
+* <<Vitesse d'écriture élevée avec les paires HA dans AWS et Azure>>
+* <<Prise en charge de 24 machines virtuelles de stockage dans AWS>>
+* <<Disque principal pour les systèmes à un seul nœud dans AWS>>
 
 
 
