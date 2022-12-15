@@ -184,6 +184,13 @@
     </li>
     <li>
       
+      <a href="https://docs.netapp.com/fr-fr/cloud-volumes-ontap-9120-relnotes/reference-new.html" target="_self">
+        <span translate="no" class="notranslate"><span>Cloud Volumes ONTAP</span><span class="version"> 9.12.0</span></span>
+      </a>
+                     
+    </li>
+    <li>
+      
       <a href="https://docs.netapp.com/fr-fr/cloud-volumes-ontap-9111-relnotes/reference-new.html" target="_self">
         <span translate="no" class="notranslate"><span>Cloud Volumes ONTAP</span><span class="version"> 9.11.1</span></span>
       </a>
@@ -768,7 +775,7 @@
 
         
         <li class="n-breadcrumb__list-item">
-          <a href="https://docs.netapp.com/fr-fr/cloud-manager-family/">Cloud Manager</a>
+          <a href="https://docs.netapp.com/fr-fr/cloud-manager-family/">BlueXP</a>
         </li>
         
 
@@ -804,7 +811,7 @@
 <p class="page-details">
   
     
-    <time datetime="2022-12-09 16:32:44 +0000">12/09/2022</time>
+    <time datetime="2022-12-15 21:19:00 +0000">12/15/2022</time>
     
   
 
@@ -820,7 +827,7 @@
 <p>Cloud Volumes ONTAP 9.8 comprend un certain nombre de nouvelles fonctionnalités et améliorations.</p>
 </div>
 <div class="paragraph">
-<p>D&#8217;autres fonctionnalités et améliorations sont également introduites dans les dernières versions de Cloud Manager. Voir la <a href="https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/whats-new.html" target="_blank" rel="noopener">"Notes de version de Cloud Manager"</a> pour plus d&#8217;informations.</p>
+<p>D&#8217;autres fonctionnalités et améliorations sont également introduites dans les dernières versions de BlueXP. Voir la <a href="https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/whats-new.html" target="_blank" rel="noopener">"Notes de mise à jour BlueXP"</a> pour plus d&#8217;informations.</p>
 </div>
 </div>
 </div>
@@ -842,18 +849,18 @@
 <h2 id="9-8-ga-5-janvier-2021">9.8 GA (5 janvier 2021)</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>La version GA de Cloud Volumes ONTAP 9.8 est désormais disponible. La version GA inclut des correctifs. Cloud Manager vous invite à mettre à niveau les systèmes 9.8 RC1 et 9.7 existants vers cette version.</p>
+<p>La version GA de Cloud Volumes ONTAP 9.8 est désormais disponible. La version GA inclut des correctifs. BlueXP vous invitera à mettre à niveau les systèmes 9.8 RC1 et 9.7 existants vers cette version.</p>
 </div>
 </div>
 </div>
 <div class="sect1">
-<h2 id="modifications-introduites-avec-cloud-manager-3-9-2-4-janvier-2021">Modifications introduites avec Cloud Manager 3.9.2 (4 janvier 2021)</h2>
+<h2 id="modifications-introduites-avec-le-connecteur-3-9-2-4-janvier-2021">Modifications introduites avec le connecteur 3.9.2 (4 janvier 2021)</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>La version 3.9.2 de Cloud Manager inclut plusieurs améliorations pour Cloud Volumes ONTAP, notamment la prise en charge des publications hors AWS, des disques de grande taille dans Google Cloud et bien plus encore.</p>
+<p>La version 3.9.2 de BlueXP Connector inclut plusieurs améliorations pour Cloud Volumes ONTAP, notamment la prise en charge des post-production AWS, des disques de grande taille dans Google Cloud.</p>
 </div>
 <div class="paragraph">
-<p>Accédez au <a href="https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/whats-new.html" target="_blank" rel="noopener">"Notes de version de Cloud Manager"</a> pour plus d&#8217;informations sur la version 3.9.2.</p>
+<p>Accédez au <a href="https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/whats-new.html" target="_blank" rel="noopener">"Notes de mise à jour BlueXP"</a> pour plus d&#8217;informations sur la version 3.9.2.</p>
 </div>
 </div>
 </div>
@@ -880,7 +887,7 @@
 <h2 id="mise-à-jour-9-8-rc1-12-novembre-2020">Mise à jour 9.8 RC1 (12 novembre 2020)</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>Comme les systèmes à un seul nœud, Cloud Manager alloue désormais un disque central aux nouveaux déploiements de 9.8 paires HA dans AWS lorsque vous utilisez un type d&#8217;instance C5, M5 ou R5. Le disque de base étend la capacité à basculer entre les types d&#8217;instances pris en charge, améliore la capacité du système à collecter des fichiers « core » lorsqu&#8217;un problème se produit, ce qui permet par la suite de prendre en charge des types d&#8217;instances plus volumineux.</p>
+<p>Comme pour les systèmes à un seul nœud, BlueXP alloue désormais un disque central aux nouveaux déploiements de 9.8 paires HA dans AWS lorsque vous utilisez un type d&#8217;instance C5, M5 ou R5. Le disque de base étend la capacité à basculer entre les types d&#8217;instances pris en charge, améliore la capacité du système à collecter des fichiers « core » lorsqu&#8217;un problème se produit, ce qui permet par la suite de prendre en charge des types d&#8217;instances plus volumineux.</p>
 </div>
 <div class="paragraph">
 <p>Le disque principal est un disque SSD polyvalent (gp2) avec 540 Gio.</p>
@@ -984,7 +991,7 @@ L&#8217;ajout de ce disque principal permet de prendre en charge un seul disque 
 <div class="sect2">
 <h3 id="disque-principal-pour-les-systèmes-à-un-seul-nœud-dans-aws">Disque principal pour les systèmes à un seul nœud dans AWS</h3>
 <div class="paragraph">
-<p>Cloud Manager attribue désormais un disque central aux nouveaux déploiements de 9.8 nœuds uniques dans AWS lorsque vous utilisez un type d&#8217;instance C5, M5 ou R5. Le disque de base étend la capacité à basculer entre les types d&#8217;instances pris en charge, améliore la capacité du système à collecter des fichiers « core » lorsqu&#8217;un problème se produit, ce qui permet par la suite de prendre en charge des types d&#8217;instances plus volumineux.</p>
+<p>BlueXP alloue désormais un disque central aux nouveaux déploiements à 9.8 nœuds uniques dans AWS lorsque vous utilisez un type d&#8217;instance C5, M5 ou R5. Le disque de base étend la capacité à basculer entre les types d&#8217;instances pris en charge, améliore la capacité du système à collecter des fichiers « core » lorsqu&#8217;un problème se produit, ce qui permet par la suite de prendre en charge des types d&#8217;instances plus volumineux.</p>
 </div>
 <div class="paragraph">
 <p>Le disque principal est un disque SSD polyvalent (gp2) avec 540 Gio.</p>
@@ -1005,10 +1012,10 @@ L&#8217;ajout de ce disque « core » prend en charge un seul disque de données
 </div>
 </div>
 <div class="sect1">
-<h2 id="version-requise-de-cloud-manager-connector">Version requise de Cloud Manager Connector</h2>
+<h2 id="version-requise-du-connecteur-bluexp">Version requise du connecteur BlueXP</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>Cloud Manager Connector doit exécuter la version 3.9.0 ou ultérieure pour déployer de nouveaux systèmes Cloud Volumes ONTAP 9.8 et mettre à niveau les systèmes existants vers la version 9.8.</p>
+<p>Le connecteur BlueXP doit exécuter la version 3.9.0 ou ultérieure pour déployer de nouveaux systèmes Cloud Volumes ONTAP 9.8 et mettre à niveau les systèmes existants vers la version 9.8.</p>
 </div>
 </div>
 </div>
@@ -1018,12 +1025,12 @@ L&#8217;ajout de ce disque « core » prend en charge un seul disque de données
 <div class="ulist">
 <ul>
 <li>
-<p>La mise à niveau d&#8217;Cloud Volumes ONTAP doit être effectuée depuis Cloud Manager. Vous ne devez pas mettre à niveau Cloud Volumes ONTAP à l&#8217;aide de System Manager ou de l&#8217;interface de ligne de commandes. Cela peut affecter la stabilité du système.</p>
+<p>Les mises à niveau de Cloud Volumes ONTAP doivent être effectuées depuis BlueXP. Vous ne devez pas mettre à niveau Cloud Volumes ONTAP à l&#8217;aide de System Manager ou de l&#8217;interface de ligne de commandes. Cela peut affecter la stabilité du système.</p>
 </li>
 <li>
-<p>Vous pouvez effectuer la mise à niveau vers Cloud Volumes ONTAP 9.8 à partir de la version 9.7. Cloud Manager vous invite à mettre à niveau vos systèmes Cloud Volumes ONTAP 9.7 existants vers la version 9.8.</p>
+<p>Vous pouvez effectuer la mise à niveau vers Cloud Volumes ONTAP 9.8 à partir de la version 9.7. BlueXP vous invite à mettre à niveau vos systèmes Cloud Volumes ONTAP 9.7 existants vers la version 9.8.</p>
 <div class="paragraph">
-<p><a href="http://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-updating-ontap-cloud.html" target="_blank" rel="noopener">"Découvrez comment effectuer la mise à niveau lorsque Cloud Manager vous informe"</a>.</p>
+<p><a href="http://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-updating-ontap-cloud.html" target="_blank" rel="noopener">"Découvrez comment effectuer la mise à niveau lorsque BlueXP vous avertit"</a>.</p>
 </div>
 </li>
 <li>
