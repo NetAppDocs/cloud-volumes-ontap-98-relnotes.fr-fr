@@ -22,7 +22,7 @@ Cloud Volumes ONTAP présente des limites de configuration du stockage pour assu
 
 La capacité système maximale d'un système Cloud Volumes ONTAP est déterminée par sa licence. La capacité système maximale inclut le stockage sur disque et le stockage objet utilisé pour le Tiering des données. NetApp ne prend pas en charge le dépassement de cette limite.
 
-Pour certaines configurations, les limites de disque vous empêchent d'atteindre la limite de capacité en utilisant uniquement des disques. Vous pouvez atteindre la limite de capacité de https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/concept-data-tiering.html["tiering des données inactives vers le stockage objet"^]. Pour plus de détails, reportez-vous aux limites de disques ci-dessous.
+Pour certaines configurations, les limites de disque vous empêchent d'atteindre la limite de capacité en utilisant uniquement des disques. Vous pouvez atteindre la limite de capacité de https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/concept-data-tiering.html["tiering des données inactives vers le stockage objet"^]. Pour plus de détails, reportez-vous aux limites de disques ci-dessous.
 
 [cols="25,75"]
 |===

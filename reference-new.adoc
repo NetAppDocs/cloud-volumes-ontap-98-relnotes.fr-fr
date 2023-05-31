@@ -16,7 +16,7 @@ summary: Cloud Volumes ONTAP 9.8 comprend un certain nombre de nouvelles fonctio
 [role="lead"]
 Cloud Volumes ONTAP 9.8 comprend un certain nombre de nouvelles fonctionnalités et améliorations.
 
-D'autres fonctionnalités et améliorations sont également introduites dans les dernières versions de BlueXP. Voir la https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/whats-new.html["Notes de mise à jour BlueXP"^] pour plus d'informations.
+D'autres fonctionnalités et améliorations sont également introduites dans les dernières versions de BlueXP. Voir la https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/whats-new.html["Notes de mise à jour BlueXP"^] pour plus d'informations.
 
 
 
@@ -24,7 +24,7 @@ D'autres fonctionnalités et améliorations sont également introduites dans les
 
 Dans AWS, les types d'instances EC2 c4, m4 et r4 ne sont plus pris en charge par Cloud Volumes ONTAP. Si un système existant fonctionne sur un type d'instance c4, m4 ou r4, vous devez passer à un type d'instance dans la famille d'instances c5, m5 ou r5.
 
-link:https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-change-ec2-instance.html["Découvrez comment modifier le type d'instance EC2 pour Cloud Volumes ONTAP"^].
+link:https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-change-ec2-instance.html["Découvrez comment modifier le type d'instance EC2 pour Cloud Volumes ONTAP"^].
 
 Reportez-vous à la section link:https://mysupport.netapp.com/info/communications/ECMLP2880231.html["Support NetApp"^] pour en savoir plus sur la fin de disponibilité et la prise en charge de ces types d'instances.
 
@@ -40,7 +40,7 @@ La version GA de Cloud Volumes ONTAP 9.8 est désormais disponible. La version G
 
 La version 3.9.2 de BlueXP Connector inclut plusieurs améliorations pour Cloud Volumes ONTAP, notamment la prise en charge des post-production AWS, des disques de grande taille dans Google Cloud.
 
-Accédez au https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/whats-new.html["Notes de mise à jour BlueXP"^] pour plus d'informations sur la version 3.9.2.
+Accédez au https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/whats-new.html["Notes de mise à jour BlueXP"^] pour plus d'informations sur la version 3.9.2.
 
 
 
@@ -92,7 +92,7 @@ Une paire haute disponibilité garantit une fiabilité exceptionnelle et la cont
 
 Afficher link:reference-configs-gcp.html["configurations compatibles"] et link:reference-limits-gcp.html["limites de stockage"].
 
-https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/concept-ha-google-cloud.html["En savoir plus sur les paires haute disponibilité dans Google Cloud"^].
+https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/concept-ha-google-cloud.html["En savoir plus sur les paires haute disponibilité dans Google Cloud"^].
 
 
 
@@ -108,7 +108,7 @@ Cloud Volumes ONTAP prend désormais en charge la vitesse d'écriture élevée a
 
 Avant de choisir une vitesse d'écriture, vous devez comprendre les différences entre les paramètres normaux et élevés et les risques et les recommandations lors de l'utilisation de la vitesse d'écriture élevée.
 
-https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/concept-write-speed.html["En savoir plus >>"^].
+https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/concept-write-speed.html["En savoir plus >>"^].
 
 
 
@@ -124,7 +124,7 @@ Les machines virtuelles de stockage que vous configurez pour la reprise après i
 
 link:reference-limits-aws.html["En savoir plus sur les limites des machines virtuelles de stockage"].
 
-https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-managing-svms-aws.html["Découvrez comment créer des machines virtuelles de stockage destinées à Cloud Volumes ONTAP dans AWS"^].
+https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-managing-svms-aws.html["Découvrez comment créer des machines virtuelles de stockage destinées à Cloud Volumes ONTAP dans AWS"^].
 
 
 
@@ -150,7 +150,7 @@ Le connecteur BlueXP doit exécuter la version 3.9.0 ou ultérieure pour déploy
 * Les mises à niveau de Cloud Volumes ONTAP doivent être effectuées depuis BlueXP. Vous ne devez pas mettre à niveau Cloud Volumes ONTAP à l'aide de System Manager ou de l'interface de ligne de commandes. Cela peut affecter la stabilité du système.
 * Vous pouvez effectuer la mise à niveau vers Cloud Volumes ONTAP 9.8 à partir de la version 9.7. BlueXP vous invite à mettre à niveau vos systèmes Cloud Volumes ONTAP 9.7 existants vers la version 9.8.
 +
-http://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-updating-ontap-cloud.html["Découvrez comment effectuer la mise à niveau lorsque BlueXP vous avertit"^].
+http://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-updating-ontap-cloud.html["Découvrez comment effectuer la mise à niveau lorsque BlueXP vous avertit"^].
 
 * La mise à niveau d'un système à un nœud unique permet de mettre le système hors ligne pendant 25 minutes au cours desquelles les E/S sont interrompues.
 * La mise à niveau d'une paire haute disponibilité s'effectue sans interruption et les E/S sont continues. Au cours de ce processus de mise à niveau sans interruption, chaque nœud est mis à niveau en tandem afin de continuer à traiter les E/S aux clients.
